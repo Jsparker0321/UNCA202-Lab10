@@ -1,4 +1,11 @@
-
+/**
+ * 
+ * @author Jessica Parker
+ * @version Lab 10: Binary Trees: A Recursive Data Structure
+ * @version CSCI 202
+ * @version November 16th, 2018
+ *
+ */
 public class BinaryTree {
 
 	final static BinaryTree EMPTYTREE = new BinaryTree(3, null, null);
@@ -33,8 +40,6 @@ public class BinaryTree {
 	}
 
 	public void printPreOrder() {
-
-		// TO BE COMPLETED
 		
 		if (this != EMPTYTREE) {
 			System.out.print(this.key + ", ");
@@ -56,8 +61,7 @@ public class BinaryTree {
 	}
 
 	public void printPostOrder() {
-
-		// TO BE COMPLETED
+		
 		if (this != EMPTYTREE) {
 			this.leftChild.printPostOrder();
 			this.rightChild.printPostOrder();
